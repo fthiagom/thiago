@@ -11,10 +11,6 @@ namespace aprendendo
             string nome = "";
             
             
-            Console.WriteLine("qual o seu nome:");
-            nome = Console.ReadLine();
-            Console.WriteLine("muito prazer " + "," + nome);
-            Console.WriteLine("vamos fazer uma conta?");
             Console.WriteLine("me informe o valor de venda: ");
             int valordevenda= Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("me informe a porcentagem referente a esse valor:");
