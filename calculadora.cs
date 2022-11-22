@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
@@ -24,9 +25,9 @@ namespace ConsoleApp1
             if (1 == soma)
             {
                 Console.WriteLine("me informe o primeiro numero que deseja fazer a soma: ");
-                float a = float.Parse(Console.ReadLine());
+                double a = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("muito bem, agora me informe o segundo numero: ");
-                float b = float.Parse(Console.ReadLine());
+                double b = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("voce gostaria de acrescentar o terceriro numero: diga sim ou não ");
                 string ass = Console.ReadLine();
                 string asss = "sim";
@@ -35,16 +36,16 @@ namespace ConsoleApp1
                 {
 
                     Console.WriteLine("ok. me informe o terceiro numero da soma: ");
-                    float c = float.Parse(Console.ReadLine());
-                    float resultado1 = (a + b);
-                    float resultado3 = (resultado1 + c);
+                    double c = Convert.ToDouble(Console.ReadLine());
+                    double resultado1 = (a + b);
+                    double resultado3 = (resultado1 + c);
                     Console.WriteLine("o resultado dos numero escolhidos são: " + resultado3);
                     Console.ReadLine();
 
                 }
                 else
                 {
-                    float resultado2 = a + b;
+                    double resultado2 = a + b;
                     Console.WriteLine("o resultado dos numero escolhidos são: " + resultado2);
                     Console.ReadLine();
                 }
@@ -52,9 +53,9 @@ namespace ConsoleApp1
             else if (2 == soma)
             {
                 Console.WriteLine("me informe o primeiro numero que deseja fazer a subtração: ");
-                float a = float.Parse(Console.ReadLine());
+                double a = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("muito bem, agora me informe o segundo numero: ");
-                float b = float.Parse(Console.ReadLine());
+                double b = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("voce gostaria de acrescentar o terceriro numero: diga sim ou não ");
                 string ass = Console.ReadLine();
                 string asss = "sim";
@@ -63,16 +64,16 @@ namespace ConsoleApp1
                 {
 
                     Console.WriteLine("ok. me informe o terceiro numero da subtração: ");
-                    float c = float.Parse(Console.ReadLine());
-                    float resultado1 = (a - b);
-                    float resultado3 = (resultado1 - c);
+                    double c = Convert.ToDouble(Console.ReadLine());
+                    double resultado1 = (a - b);
+                    double resultado3 = (resultado1 - c);
                     Console.WriteLine("o resultado dos numero escolhidos são: " + resultado3);
                     Console.ReadLine();
 
                 }
                 else
                 {
-                    float resultado2 = a - b;
+                    double resultado2 = a - b;
                     Console.WriteLine("o resultado dos numero escolhidos são: " + resultado2);
                     Console.ReadLine();
                 }
@@ -80,9 +81,9 @@ namespace ConsoleApp1
             else if (3 == soma)
             {
                 Console.WriteLine("me informe o primeiro numero que deseja fazer a multiplicação: ");
-                float a = float.Parse(Console.ReadLine());
+                double a = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("muito bem, agora me informe o segundo numero: ");
-                float b = float.Parse(Console.ReadLine());
+                double b = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("voce gostaria de acrescentar o terceriro numero: diga sim ou não ");
                 string ass = Console.ReadLine();
                 string asss = "sim";
@@ -91,16 +92,16 @@ namespace ConsoleApp1
                 {
 
                     Console.WriteLine("ok. me informe o terceiro numero da multiplicação: ");
-                    float c = float.Parse(Console.ReadLine());
-                    float resultado1 = (a * b);
-                    float resultado3 = (resultado1 * c);
+                    double c = Convert.ToDouble(Console.ReadLine());
+                    double resultado1 = (a * b);
+                    double resultado3 = (resultado1 * c);
                     Console.WriteLine("o resultado dos numero escolhidos são: " + resultado3);
                     Console.ReadLine();
 
                 }
                 else
                 {
-                    float resultado2 = a * b;
+                    double resultado2 = a * b;
                     Console.WriteLine("o resultado dos numero escolhidos são: " + resultado2);
                     Console.ReadLine();
                 }
@@ -108,10 +109,10 @@ namespace ConsoleApp1
             else if (4 == soma)
             {
                 Console.WriteLine("me informe o primeiro numero que deseja fazer a divisão: ");
-                float a = float.Parse(Console.ReadLine());
+                double a = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("muito bem, agora me informe o segundo numero: ");
-                float b = float.Parse(Console.ReadLine());
-                float resultado2 = a / b;
+                double b = Convert.ToDouble(Console.ReadLine());
+                double resultado2 = a / b;
                 Console.WriteLine("o resultado dos numero escolhidos são: " + resultado2);
                 Console.ReadLine();
             }
