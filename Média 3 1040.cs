@@ -19,40 +19,41 @@ namespace ConsoleApp1
             double n4 = double.Parse(p1[3]);
 
 
-            double media = (n1 * 2 + n2 * 3 + n3 * 4 + n4 * 1) / 10;
+            double media1 = n1 * 2 + n2 * 3 + n3 * 4 + n4 * 1;
+            double media2 = media1 / 10;
 
-            if (media >= 7.0)
+            if (media2 >= 7.0)
             {
-                Console.WriteLine($"Media: {media:F2}");
+                Console.WriteLine($"Media: {media2:F2}");
                 Console.WriteLine("Aluno aprovado.");
                 Console.ReadKey();
             }
-            else if (media < 5.0)
+            else if (media2 < 5.0)
             {
-                Console.WriteLine($"Media: {media:F2}");
+                Console.WriteLine($"Media: {media2:F2}");
                 Console.WriteLine("Aluno reprovado.");
                 Console.ReadKey();
             }
-            else if (media >= 5.0 || media <= 6.9)
+            else if (media2 >= 5.0 || media2 <= 6.9)
             {
-                Console.WriteLine($"Media: {media:F2}");
+                Console.WriteLine($"Media: {media2:F2}");
                 Console.WriteLine("Aluno em exame.");
                 string[] p2 = Console.ReadLine().Split();
                 double n5 = double.Parse(p2[0]);
-                double media2 = (media * n5) / 2;
-                Console.WriteLine($"Media: {media2:F2}");
-                if (media2 >= 5.0)
+                double media3 = (media2 * n5) / 2;
+                Console.WriteLine($"Media: {media3:F2}");
+                if (media3 >= 5.0)
                 {
                     Console.WriteLine("Nota do exame: " + n5);
                     Console.WriteLine("Aluno aprovado.");
-                    Console.WriteLine($"Media: {media2:F2}");
+                    Console.WriteLine($"Media: {media3:F2}");
                     Console.ReadKey();
                 }
-                else if (media2 <= 4.9)
+                else if (media3 <= 4.9)
                 {
                     Console.WriteLine("Nota do exame: " + n5);
                     Console.WriteLine("Aluno reprovado.");
-                    Console.WriteLine($"Media: {media2:F2}");
+                    Console.WriteLine($"Media: {media3:F2}");
                     Console.ReadKey();
                 }
             }
