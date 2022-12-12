@@ -26,7 +26,7 @@ namespace Pares_entre_Cinco_Números
             numeros[3] = numero4;
             numeros[4] = numero5;
 
-            
+
 
 
             for (int i = 0; i < numeros.Length; i++)
@@ -35,7 +35,7 @@ namespace Pares_entre_Cinco_Números
                 if (resto == 0.0)
                 {
                     valorespares++;
-                   
+
                 }
             }
             Console.WriteLine($"{valorespares} valores pares");
